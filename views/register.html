@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<head>
+    <link rel="stylesheet" href="stylesheets/login-style.css">
+    <link href='//fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="wrapper fadeInDown">
+        <div id="formContent">
+            <!-- Tabs Titles -->
+            <h2 class="inactive underlineHover">
+                <a href="login">Sign In</a>
+            </h2>
+            <h2 class="active">
+                <a href="register">Sign Up</a>
+            </h2>
+
+            <!-- Login Form -->
+            <form method="post" action="authorize/signup">
+                <input id="email" class="fadeIn second" name="email" placeholder="Email" type="email" required>
+                <input id="name" class="fadeIn second" name="name" placeholder="Name" type="text" required>
+                <input id="surname" class="fadeIn second" name="surname" placeholder="Surname" type="text" required>
+                <input id="password" class="fadeIn third" name="password" placeholder="Password" type="password"
+                    required>
+                <input type="submit" class="fadeIn fourth" value="Register">
+            </form>
+        </div>
+    </div>
+</body>

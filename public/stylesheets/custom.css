@@ -1,0 +1,358 @@
+body {
+    background-color: #fff6f6
+}
+h1 {
+    text-align: center;
+}
+input[type=text] {
+    color: black;
+}
+h4 {
+    font-size: 16px;
+    font-weight: 700;
+}
+header {
+    padding: 20px 0 0 0;
+    background:white;
+    text-align: center;
+}
+@media (min-width: 750px) {
+    header {
+        text-align: left;
+    }
+}
+.remove {
+    background-color: red;
+    border-radius: 50%;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+ul {
+    list-style: none;
+}
+#hero {
+    background-image:url(../img/hero.jpg);
+    height: 450px;
+    background-size: cover;
+}
+#heading {
+    margin: 30px 0;
+}
+#heading-nav {
+  /* margin-top: 30px; */
+  margin-bottom: 13px;
+}
+.navbar{
+  background-color: #eeeeee;
+}
+.submenu {
+    position: relative;
+}
+
+.submenu #shopping-cart{
+    display: none;
+}
+.submenu:hover #shopping-cart{
+    display: block;
+    position: absolute;
+    right:0;
+    top:100%;
+    z-index: 1;
+    background-color: white;
+    padding: 20px;
+    /* min-height: 200px; */
+    min-width: 300px;
+}
+
+.hero-content {
+    margin-top: 80px;
+    color: white;
+}
+.hero-content form {
+    position: relative;
+    margin-bottom: 0;
+}
+.hero-content form #search-course {
+    height: 50px;
+    margin-bottom: 0;
+}
+.hero-content form .submit-search-course {
+    position: absolute;
+    right:0;
+    top:0;
+    height: 100%;
+    padding: 0;
+    display: block;
+    text-indent: -9999px;
+    width: 50px;
+    background-image: url(../img/mglass.png);
+    background-position: right center;
+    background-repeat: no-repeat;
+    border:none;
+}
+
+
+.main-bar {
+    padding: 20px 0;
+   background: #741d51; /* Old browsers */
+   background: -moz-linear-gradient(left, #741d51 0%, #e44e52 100%); /* FF3.6-15 */
+   background: -webkit-linear-gradient(left, #741d51 0%,#e44e52 100%); /* Chrome10-25,Safari5.1-6 */
+   background: linear-gradient(to right, #741d51 0%,#e44e52 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#741d51', endColorstr='#e44e52',GradientType=1 ); /* IE6-9 */
+}
+
+.main-bar p {
+    margin:0;
+    color: white;
+}
+.icon {
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 60px;
+    background-size: 30px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+@media (min-width: 750px) {
+    .icon {
+        margin-bottom:0;
+    }
+}
+
+
+
+.icon1 {
+    background-image: url(../img/icon1.png);
+}
+.icon2 {
+    background-image: url(../img/icon2.png);
+}
+.icon3 {
+    background-image: url(../img/icon3.png);
+}
+
+#courses-list .row {
+    margin-bottom:20px;
+}
+.add-to-cart {
+    margin:10px 0;
+}
+.remove-from-cart{
+    margin:10px 0;    
+}
+.card {
+    text-align: center;
+    border: 1px solid #726f6f;
+    background: white;
+    margin-top: 2rem;
+}
+@media (min-width: 550px) {
+    .card {
+        text-align: left;
+    }
+}
+.info-card  {
+    padding: 10px 20px;
+}
+.profile-card{
+  padding: 30px 20px; 
+  color: white; 
+}
+.without_marginbot{
+  margin-bottom: 0px; 
+}
+.info-card p,
+.card h4 {
+    margin-bottom: 5px;
+}
+.info-card .price {
+    text-decoration: line-through;
+    font-size: 18px;
+    margin-top: 10px;
+}
+.info-card .price span {
+    font-weight: 700;
+    font-size: 22px;
+}
+.footer {
+    margin-top: 40px;
+    border-top:1px solid #aaa;;
+    padding-top: 40px;
+}
+.footer .menu a{
+display: block;
+margin-bottom: 10px;
+text-decoration: none;
+}
+
+
+/* MODAL FORM */
+.modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.65);
+    visibility: hidden;
+    backface-visibility: hidden;
+    opacity: 0;
+    transition: opacity .15s ease-in-out;
+  }
+  .modal.modal-open {
+    visibility: visible;
+    backface-visibility: visible;
+    opacity: 1;
+    z-index: 1;
+  }
+  .modal .modal-inner {
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #close:hover,#placeBit:hover{
+    cursor:pointer;
+  }
+  .modal .modal-inner .modal-content {
+    background-color: white;
+    max-width: 90em;
+    padding: 1em 1.5em;
+    position: relative;
+    margin: 2em;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.35);
+  }
+  .modal .modal-inner .modal-content .modal-close-icon {
+    position: absolute;
+    right: 1.5em;
+  }
+  .modal .modal-inner .modal-content .modal-content-inner {
+    padding-right: 2em;
+  }
+  .modal .modal-inner .modal-content .modal-content-inner h1, .modal .modal-inner .modal-content .modal-content-inner h2, .modal .modal-inner .modal-content .modal-content-inner h3, .modal .modal-inner .modal-content .modal-content-inner h4, .modal .modal-inner .modal-content .modal-content-inner h5, .modal .modal-inner .modal-content .modal-content-inner h6 {
+    margin-bottom: 0.25em;
+  }
+  .modal .modal-inner .modal-content .modal-content-inner p {
+    margin-bottom: 1em;
+  }
+  .modal .modal-inner .modal-content .modal-buttons-seperator {
+    margin: 1.5em 0;
+    margin-top: 0;
+  }
+  .modal .modal-inner .modal-content .modal-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .modal .modal-inner .modal-content .modal-buttons button {
+    margin-left: 1em;
+  }
+  .modal .modal-inner .modal-content .modal-buttons button:first-child {
+    margin-left: 0;
+  }
+  
+  .demo-container {
+    text-align: center;
+  }
+
+
+  /*MODAL FORM2*/
+  .modal2 {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.65);
+    visibility: hidden;
+    backface-visibility: hidden;
+    opacity: 0;
+    transition: opacity .15s ease-in-out;
+  }
+  .modal2.modal2-open {
+    visibility: visible;
+    backface-visibility: visible;
+    opacity: 1;
+    z-index: 1;
+  }
+  .modal2 .modal2-inner {
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .modal2 .modal2-inner .modal2-content {
+    background-color: white;
+    max-width: 90em;
+    padding: 1em 1.5em;
+    position: relative;
+    margin: 2em;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.35);
+  }
+  .modal2 .modal2-inner .modal2-content .modal2-close-icon {
+    position: absolute;
+    right: 1.5em;
+  }
+  .modal2 .modal2-inner .modal2-content .modal2-content-inner {
+    padding-right: 2em;
+  }
+  .modal2 .modal2-inner .modal2-content .modal2-content-inner h1, .modal2 .modal2-inner .modal2-content .modal2-content-inner h2, .modal2 .modal2-inner .modal2-content .modal2-content-inner h3, .modal2 .modal2-inner .modal2-content .modal2-content-inner h4, .modal2 .modal-inner2 .modal-content2 .modal2-content-inner h5, .modal2 .modal-inner2 .modal-content2 .modal2-content-inner h6 {
+    margin-bottom: 0.25em;
+  }
+  .modal2 .modal2-inner .modal2-content .modal2-content-inner p {
+    margin-bottom: 1em;
+  }
+  .modal2 .modal2-inner .modal2-content .modal2-buttons-seperator {
+    margin: 1.5em 0;
+    margin-top: 0;
+  }
+  .modal2 .modal2-inner .modal2-content .modal2-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .modal2 .modal2-inner .modal2-content .modal2-buttons button {
+    margin-left: 1em;
+  }
+  .modal2 .modal2-inner .modal2-content .modal2-buttons button:first-child {
+    margin-left: 0;
+  }
+
+  .overflow{
+    overflow-x: auto;
+  }
+/* PROFILE */
+#profile_info_color{
+    background-color: #348fb1; 
+    height: 285px;
+  }
+  #profile_logo_color{
+    background-color: #eeeeee;
+    padding: 20px 0px;
+    text-align:center;
+  }
+
+  .carlistrow{
+    background-color: #348fb1; 
+    padding: 20px 20px;
+    color:white; 
+  }
+
+  .car-row{
+    background-color: #eeeeee; 
+    padding: 20px;
+  }
+  
+  .rightside{
+    background-color: #aaa;
+    min-height: 600px;
+  }

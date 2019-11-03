@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<head>
+    <link rel="stylesheet" href="stylesheets/login-style.css">
+    <link href='//fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet'>
+</head>
+
+<body>
+    <div class="wrapper fadeInDown">
+        <div id="formContent">
+            <!-- Tabs Titles -->
+            <h2 class="active">
+                <a href="login">Sign In</a>
+            </h2>
+            <h2 class="inactive underlineHover">
+                <a href="register">Sign Up</a>
+            </h2>
+            <!-- Login Form -->
+            <form id="loginform" name="loginform" method="POST" action="authorize/login">
+                <input id="email" class="fadeIn second" name="email" placeholder="Email" type="email" required>
+                <input id="password" class="fadeIn third" name="password" placeholder="Password" type="password" required>
+                <input id="submitLogin" name="submitLogin" type="submit" class="fadeIn fourth" value="Log In">
+            </form>
+
+            <!-- Remind Passowrd -->
+            <div id="formFooter">
+                <h2 id="alert" style="color:red"></h2>
+                <a class="underlineHover" href="forgotPassword">Forgot Password?</a>
+            </div>
+        </div>
+    </div>
+</body>
